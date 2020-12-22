@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import TodoList from '../components/TodoList';
 import TableForm from "../components/TableForm";
 import DropDownMenu from '../components/DropDownMenu';
+import Tabs from "../components/Tabs";
     
 
 class Dashboard extends Component {
@@ -75,6 +76,15 @@ class Dashboard extends Component {
                     <a>A sample dropdown</a>
                     <DropDownMenu title="Country DropDown" list={this.state.dropdown} multiSelected={true}/>                    
                 </div>
+
+                <div>
+                    <a>A sample Tab</a>
+                    <Tabs>
+                    <div key={0} label="Gator"> 
+                        See ya later, <em>Alligator</em>! 
+                    </div> 
+                    </Tabs>
+                </div>                    
             </div>
         )
     }
